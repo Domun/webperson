@@ -1,0 +1,107 @@
+#plate {
+  width: 100%;
+  background: url(../../assets/img/plate/bg1.jpg) repeat-y;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+#plate .plate_main {
+  width: 100%;
+  background: rgba(8, 26, 60, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+#plate .plate_main .plate-items {
+  width: 90%;
+  overflow: hidden;
+  margin-left: 5%;
+  padding-bottom: 5%;
+}
+
+#plate .plate_main .plate-items .plate-item {
+  width: 31%;
+  height: 300px;
+  overflow: hidden;
+  margin: 1%;
+  float: left;
+  border: 1px solid #123458;
+  background: #ffffff;
+  position: relative;
+}
+
+#plate .plate_main .plate-items .plate-item .plate-img {
+  width: 100%;
+}
+
+#plate .plate_main .plate-items .plate-item .plate-block {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background: rgba(8, 26, 60, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #f1f1f1;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#plate .plate_main .plate-items .plate-item .plate-block > h3 {
+  line-height: 36px;
+}
+
+#plate .plate_main .plate-items .plate-item:hover .plate-block {
+  background: rgba(8, 26, 60, 0.25);
+}
+
+#plate .img_mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+  z-index: 999999;
+  background: rgba(200, 200, 200, 0.85);
+}
+
+#plate .img_mask .mask_block {
+  width: 100%;
+  height: 90%;
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#plate .img_mask .mask_block .mask-img {
+  height: 100%;
+  float: left;
+  border: 1px solid #123458;
+}
+
+#plate .img_mask .mask_block .mask_none {
+  font-size: 50px;
+  color: #b94c4c;
+  cursor: pointer;
+  float: left;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=plate.css.map */

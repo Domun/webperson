@@ -1,0 +1,235 @@
+/*页面重构*/
+@media screen and (max-width:1400px){
+  .pro_ul{
+    /* overflow: hidden; */
+    margin: 22% 0%;
+  }
+}
+@media screen and (max-width:1366px){
+    /*header 部分*/
+    h1 {
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        font-size: 1.5rem;
+        padding: 3% 0%;
+        text-align: center; 
+    }
+    .header{
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0%;
+        z-index: 10;
+    }
+    .deepshadow {
+        color: #e0dfdc;
+        letter-spacing: .1em;
+        opacity: 0.45;
+        text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+        animation: headertxt  8s infinite linear;
+    }
+    @keyframes headertxt{
+      0%{opacity: 0.45}
+      50%{opacity: 0.9}
+      100%{opacity: 0.45}
+    }
+    @-webkit-keyframes headertxt{
+      0%{opacity: 0.45}
+      50%{opacity: 0.9}
+      100%{opacity: 0.45}
+    }
+    @-o-keyframes headertxt{
+      0%{opacity: 0.45}
+      50%{opacity: 0.9}
+      100%{opacity: 0.45}
+    }
+    @-moz-keyframes headertxt{
+      0%{opacity: 0.45}
+      50%{opacity: 0.9}
+      100%{opacity: 0.45}
+    }
+    /*星球部分*/
+    #container {
+        height: 350px;
+        left: calc(50% - 200px);
+        position: absolute;
+        top: calc(50% - 190px);
+        width: 350px;
+      }
+      #container #sun {
+        background: url(../img/logo.png) no-repeat;
+        background-size: 75%;
+        background-position: 55% 50%;
+        border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 0 50px #fff;
+                box-shadow: 0 0 50px #fff;
+        height: 60px;
+        left: 163px;
+        position: absolute;
+        top: 138px;
+        width: 60px;
+      }
+      #container .orbit {
+        border: solid;
+        border-color: white transparent transparent transparent;
+        border-radius: 50%;
+        border-width: 1px 1px 0 0;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        position: absolute;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transform-origin: center;
+                transform-origin: center;
+      }
+      #container .orbit#earth-orbit {
+        -webkit-animation: orbit 36.5s linear infinite;
+                animation: orbit 36.5s linear infinite;
+        height: 200px;
+        left: 89px;
+        top: 75px;
+        width: 200px;
+      }
+      #container .orbit#moon-orbit {
+        -webkit-animation: orbit 2.7s linear infinite;
+                animation: orbit 2.7s linear infinite;
+        height: 80px;
+        left: -25px;
+        top: -25px;
+        width: 80px;
+      }
+      #container .orbit#mars-orbit {
+        border-color: transparent  transparent  white transparent ;
+        border-width:  0 0 1px 1px;
+        -webkit-animation: orbit 36.5s linear infinite;
+                animation: orbit 36.5s linear infinite;
+        height: 380px;
+        left: -10px;
+        top: -15px;
+        width: 380px;
+      }
+      #container .orbit .globe {
+        border-radius: 50%;
+        position: absolute;
+      }
+      #container .orbit .globe#earth {
+        background: aqua;
+        height: 30px;
+        right: 7px;
+        top: 25px;
+        width: 30px;
+      }
+      #container .orbit .globe#moon {
+        background: #d6d6d6;
+        height: 12px;
+        right: 2px;
+        top: 8px;
+        width: 12px;
+      }
+      #container .orbit .globe#mars {
+        background: rgb(173, 77, 22);
+        height: 45px;
+        left: 32px;
+        bottom: 31px;
+        width: 45px;
+      }
+      @keyframes orbit {
+        to {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes orbit {
+        to {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+      }
+      @-o-keyframes orbit {
+        to {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+      }
+      @-moz-keyframes orbit {
+        to {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+      }
+      /*水滴*/
+      .footer{
+        width: 100%;
+        height: 12%;
+        position: absolute;
+        bottom: 0%;
+        z-index: 20;
+        text-align: center
+      }
+      .icon{
+        display: inline-block;
+        color: #c9c6c6;
+        font-size: 2rem;
+        cursor: pointer;
+        animation: water 5s infinite linear alternate;
+      }
+      @keyframes water{
+        0%{transform: translateY(0px)}
+        50%{transform: translateY(30px)}
+        100%{transform: translateY(0px)}
+      }
+      @-webkit-keyframes water{
+        0%{transform: translateY(0px)}
+        50%{transform: translateY(30px)}
+        100%{transform: translateY(0px)}
+      }
+      @-o-keyframes water{
+        0%{transform: translateY(0px)}
+        50%{transform: translateY(30px)}
+        100%{transform: translateY(0px)}
+      }
+      @-moz-keyframes water{
+        0%{transform: translateY(0px)}
+        50%{transform: translateY(30px)}
+        100%{transform: translateY(0px)}
+      }
+      .icon:hover{
+        animation-play-state: paused
+      }
+
+      /*prolist-block 列表盒子*/
+      .pro_ul{
+        /* overflow: hidden; */
+        margin: 13% 0%;
+      }
+      .list-title{
+        font-size: 1em;
+      }
+      .list-desc{
+        font-size: 0.8em;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 3% 0%;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      .opacityani{
+        opacity: 1;
+      }
+      .aniimg0{
+        top: -20%;
+      }
+      .aniimg1{
+        top: -20%;
+      }
+      .aniimg2{
+        top: -16%;
+      }
+      .aniimg3{
+        top: -20%;
+      }
+}
+/* */
+@media screen and (max-width:1024px){
+
+}

@@ -1,0 +1,341 @@
+
+.scroll-box {
+  width: 100%;
+  overflow: hidden;
+}
+.banner{
+  width: 100%;
+  height:100%;
+  background: #0d1320;
+	background:-webkit-linear-gradient(left,#04121b,#051723,#332272,#332662,#3a2a73,#072338,#071828,#071738);
+	background:-o-linear-gradient(right,#04121b,#051723,#332272,#332662,#3a2a73,#072338,#071828,#071738);
+	background:-moz-linear-gradient(right,#04121b,#051723,#332272,#332662,#3a2a73,#072338,#071828,#071738);
+	background:linear-gradient(to right,#04121b,#051723,#332272,#332662,#3a2a73,#072338,#071828,#071738);
+  position: relative;
+}
+
+h1 {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 2rem;
+    padding: 5% 0%;
+    text-align: center; 
+}
+.header{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0%;
+    z-index: 10;
+}
+.deepshadow {
+    color: #e0dfdc;
+    letter-spacing: .1em;
+    opacity: 0.45;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+    animation: headertxt  8s infinite linear;
+}
+@keyframes headertxt{
+  0%{opacity: 0.9}
+  50%{opacity: 0.5}
+  100%{opacity: 0.9}
+}
+@-webkit-keyframes headertxt{
+  0%{opacity: 0.9}
+  50%{opacity: 0.5}
+  100%{opacity: 0.9}
+}
+@-o-keyframes headertxt{
+  0%{opacity: 0.9}
+  50%{opacity: 0.5}
+  100%{opacity: 0.9}
+}
+@-moz-keyframes headertxt{
+  0%{opacity: 0.9}
+  50%{opacity: 0.5}
+  100%{opacity: 0.9}
+}
+.main{
+    width: 100%;
+    height: 100%;
+}
+/*星球部分*/
+  #container {
+    height: 400px;
+    left: calc(50% - 200px);
+    position: absolute;
+    top: calc(50% - 200px);
+    width: 400px;
+    z-index: 5;
+  }
+  #container #sun {
+    background: url(../img/logo.png) no-repeat;
+    background-size: 95%;
+    background-position: 55% 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 50px #fff;
+            box-shadow: 0 0 50px #fff;
+    height: 100px;
+    left: 150px;
+    position: absolute;
+    top: 150px;
+    width: 100px;
+  }
+  #container .orbit {
+    border: solid;
+    border-color: white transparent transparent transparent;
+    border-radius: 50%;
+    border-width: 1px 1px 0 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  #container .orbit#earth-orbit {
+    -webkit-animation: orbit 36.5s linear infinite;
+            animation: orbit 36.5s linear infinite;
+    height: 300px;
+    left: 50px;
+    top: 50px;
+    width: 300px;
+  }
+  #container .orbit#moon-orbit {
+    -webkit-animation: orbit 2.7s linear infinite;
+            animation: orbit 2.7s linear infinite;
+    height: 80px;
+    left: -25px;
+    top: -25px;
+    width: 80px;
+  }
+  #container .orbit#mars-orbit {
+    border-color: transparent  transparent  white transparent ;
+    border-width:  0 0 1px 1px;
+    -webkit-animation: orbit 36.5s linear infinite;
+            animation: orbit 36.5s linear infinite;
+    height: 500px;
+    left: -50px;
+    top: -50px;
+    width: 500px;
+  }
+  #container .orbit .globe {
+    border-radius: 50%;
+    position: absolute;
+  }
+  #container .orbit .globe#earth {
+    background: aqua;
+    height: 30px;
+    right: 28px;
+    top: 28px;
+    width: 30px;
+  }
+  #container .orbit .globe#moon {
+    background: #d6d6d6;
+    height: 12px;
+    right: 2px;
+    top: 8px;
+    width: 12px;
+  }
+  #container .orbit .globe#mars {
+    background: rgb(173, 77, 22);
+    height: 45px;
+    left: 50px;
+    bottom: 50px;
+    width: 45px;
+  }
+  @keyframes orbit {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes orbit {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @-o-keyframes orbit {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes orbit {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+/*prolist-block 列表盒子*/
+
+.prolist-block{
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+}
+/* /.pro_ul 点击列表
+******************************************/
+.pro_ul{
+  width: 80%;
+  padding: 0% 10%;
+  margin: 12% 0%;
+  /* background: #04121b; */
+}
+.pro-li{
+  width: 20%;
+  margin: 3% 14.9%;
+  float: left;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.pro-li-border{
+  border: 1px solid #f2f2f2;
+  border-radius: 4%;
+}
+.icon-img{
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  padding: 5% 0%;
+}
+.proicon{
+  display: inline-block;
+  font-size: 3.5em;
+  color: rgb(25, 191, 212);
+  cursor: pointer;
+}
+.aniimg{
+  width: 20%;
+  position: absolute;
+  left: 40%;
+}
+.aniimg0{
+  top: -25%;
+  animation: aniimng1 5s infinite linear;
+  -webkit-animation: aniimng1 5s infinite linear;
+  -moz-animation: aniimng1  5s infinite linear;
+  -o-animation: aniimng1  5s infinite linear;
+}
+.aniimg1{
+  top: -25%;
+  animation: aniimng2 5s infinite linear;
+  -webkit-animation: aniimng2 5s infinite linear;
+  -moz-animation: aniimng2  5s infinite linear;
+  -o-animation: aniimng2  5s infinite linear;
+}
+.aniimg2{
+  top: -15%;
+  transform-origin: bottom center;
+  animation: aniimng3 5s infinite linear;
+  -webkit-animation: aniimng3 5s infinite linear;
+  -moz-animation: aniimng3  5s infinite linear;
+  -o-animation: aniimng3  5s infinite linear;
+}
+.aniimg3{
+  top: -28%;
+  animation: aniimng4 2s infinite linear;
+  -webkit-animation: aniimng4 2s infinite linear;
+  -moz-animation: aniimng4  2s infinite linear;
+  -o-animation: aniimng4  2s infinite linear;
+}
+@keyframes aniimng1{
+  0%{transform: rotateZ(0deg)}
+  50%{transform: rotateZ(180deg)}
+  100%{transform: rotateZ(360deg)}
+}
+@keyframes aniimng2{
+  0%{transform: translateY(0px)}
+  50%{transform: translateY(-15px)}
+  100%{transform: translateY(0px)}
+}
+@keyframes aniimng3{
+  0%{transform: rotateZ(0deg)}
+  25%{transform: rotateZ(-20deg)}
+  50%{transform: rotateZ(0deg)}
+  75%{transform: rotateZ(20deg)}
+  100%{transform: rotateZ(0deg)}
+}
+@keyframes aniimng4{
+  0%{transform: scale(0.9)}
+  50%{transform: scale(1.1)}
+  100%{transform: scale(0.9)}
+}
+.list-title{
+  color: #f2f2f2;
+  font-size: 1.2em;
+  padding: 5% 0%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.list-desc{
+  font-size: 1em;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5% 0%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.opacityani{
+  opacity: 1;
+}
+/* footer 部分*/
+.footer{
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  bottom: 0%;
+  z-index: 20;
+  text-align: center
+}
+.icon{
+  display: inline-block;
+  color: #c9c6c6;
+  font-size: 3rem;
+  cursor: pointer;
+  animation: water 5s infinite linear alternate;
+}
+@keyframes water{
+  0%{transform: translateY(0px)}
+  50%{transform: translateY(30px)}
+  100%{transform: translateY(0px)}
+}
+@-webkit-keyframes water{
+  0%{transform: translateY(0px)}
+  50%{transform: translateY(30px)}
+  100%{transform: translateY(0px)}
+}
+@-o-keyframes water{
+  0%{transform: translateY(0px)}
+  50%{transform: translateY(30px)}
+  100%{transform: translateY(0px)}
+}
+@-moz-keyframes water{
+  0%{transform: translateY(0px)}
+  50%{transform: translateY(30px)}
+  100%{transform: translateY(0px)}
+}
+.icon:hover{
+  animation-play-state: paused
+}
+/* 404 动画
+******************************************/
+.is404{
+  width: 400px;
+  text-align: center;
+  margin: 50px auto;
+  padding-bottom: 400px;
+  position: relative;
+}
+.is404 > h4{
+  border-bottom: 1px solid #f1f1f1;
+}
+.icon-404{
+  color: #f1f1f1;
+}

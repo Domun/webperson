@@ -1,0 +1,41 @@
+{
+    "ret": "success",
+    "data":[
+        {
+            "yAxis":"HTML\ncss\nscss",
+            "num":"7"
+        },
+        {
+            "yAxis":"JavaScript",
+            "num":"6"
+        },
+        {
+            "yAxis":"JQuery",
+            "num":"7"
+        },
+        {
+            "yAxis":"Ajax",
+            "num":"5"
+        },
+        {
+            "yAxis":"PhotoShop\nui\niconfont",
+            "num":"7"
+        },
+        {
+            "yAxis":"Echarts",
+            "num":"6"
+        },
+        {
+            "yAxis":"百度地图api",
+            "num":"5"
+        },
+        {
+            "yAxis":"Vue\nNode\nmongoDB",
+            "num":"5"
+        },
+        {
+            "yAxis":"NPM\nGit",
+            "num":"4"
+        }
+    ]
+}

@@ -1,0 +1,158 @@
+/* 重构页面 */
+/* 1600 */
+@media screen and (max-width:1600px){
+    .header-title{
+        width: 100%;
+        height: 40px;
+    }
+    .header-hd{
+        width: 48%;
+        margin: 0% 1%;
+        float: left;
+    }
+    .link-item{
+        padding-top: 0px;
+    }
+    .link-item > i{
+        font-size: 28px;
+    }
+    .item-git>a>i{
+        font-size: 28px;
+    }
+    .item-coding>a>i{
+        font-size: 28px;
+    }
+    .logo-box{
+        width: 80px;
+        height: 80px;
+        margin: 10px auto; 
+    }
+    .header-nav{
+        padding: 0.6rem;
+    }
+    .header-item{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    /* 微博
+    ******************************************/
+    .weibo-box{
+        width: 48%;
+        float: left;
+        padding: 5px 0px;
+    }
+    .weibo-link{
+        margin-top: 36%;
+    }
+    .box>img{
+        width: 70%;
+    }
+    /* 邮箱
+    *****************************************/
+    .email-box{
+        border-bottom: 1px solid #cccccc;
+    }
+    .email-box>h5{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .email-box>p{
+        color: #336dbe;
+        font-size: 0.88em;
+        line-height: 24px;
+    }
+    /* 微信
+    *****************************************/
+    .wechat-box{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .wechat-box>h5{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .wechat-box>img{
+        width: 65%;
+    }
+}
+/* 1366 */
+@media screen and (max-width:1366px){
+    .header-title{
+        width: 100%;
+        height: 32px;
+    }
+    .header-hd{
+        width: 48%;
+        margin: 0% 1%;
+        float: left;
+    }
+    .hello > p{
+        font-size: 16px;
+        line-height: 32px;
+        text-transform:capitalize;
+    }
+    .link-item{
+        padding-top: 0px;
+    }
+    .link-item > i{
+        font-size: 24px;
+    }
+    .item-git>a>i{
+        font-size: 24px;
+    }
+    .item-coding>a>i{
+        font-size: 24px;
+    }
+    .logo-box{
+        width: 70px;
+        height: 70px;
+        margin: 5px auto; 
+    }
+    .header-nav{
+        padding: 0.4rem;
+    }
+    .header-item{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    /* 微博
+    ******************************************/
+    .weibo-box{
+        width: 48%;
+        float: left;
+        padding: 3px 0px;
+    }
+    .weibo-link{
+        margin-top: 25%;
+    }
+    .box>img{
+        width: 50%;
+    }
+    /* 邮箱
+    *****************************************/
+    .email-box{
+        border-bottom: 1px solid #cccccc;
+    }
+    .email-box>h5{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .email-box>p{
+        color: #336dbe;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    /* 微信
+    *****************************************/
+    .wechat-box{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .wechat-box>h5{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .wechat-box>img{
+        width: 50%;
+    }
+}

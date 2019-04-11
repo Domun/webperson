@@ -1,0 +1,30 @@
+{
+    "ret": "success",
+    "data": [
+        {
+            "name": "奥巴马",
+            "describe": "手绘奥巴马 (3840*2160)",
+            "img": "assets/img/plate/obama.png"
+        },
+        {
+            "name": "贾克斯",
+            "describe": " 手绘奥巴马 (3840*2160)",
+            "img": "assets/img/plate/jax.png"
+        },
+        {
+            "name": "无限",
+            "describe": "自创人物demo (1831*1491)",
+            "img": "assets/img/plate/Infinite.png"
+        },
+        {
+            "name": "虎王",
+            "describe": "自创人物demo (1831*1491)",
+            "img": "assets/img/plate/tiger.jpg"
+        },
+        {
+            "name": "树",
+            "describe": "自创树元素demo (1831*1491)",
+            "img": "assets/img/plate/tree.png"
+        }
+    ]
+}

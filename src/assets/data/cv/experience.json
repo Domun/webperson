@@ -1,0 +1,37 @@
+{
+    "ret": "success",
+    "data": [
+        {
+            "company": "陕西大数据集团有限公司",
+            "address": "陕西省咸阳市",
+            "time": "2018年1月22日至今",
+            "projects": [
+                {
+                    "name": "秦云工程",
+                    "duty": "负责使用合作方四方伟业UE系统，制作大数据展示页面，配合后端完成数据加载。",
+                    "use": "使用四方伟业UE系统，echarts组件，MySQL数据库。"
+                },
+                {
+                    "name": "河北政务云服务考核系统",
+                    "duty": "负责部分数据展示页面的编写，实现响应式页面效果及完成数据调用。",
+                    "use": "使用html5,css3,JQuery,Ajax,Echart,js。"
+                },
+                {
+                    "name": "十四届全运会（服务网站）",
+                    "duty": "配合负责市场开发等部分页面的编写，使用轮播图插件实现页面效果及完成数据调用。",
+                    "use": "使用html5,css3,Sass,JQuery,Ajax,SuperSlide.js，百度地图api。"
+                },
+                {
+                    "name": "智慧铜川城市运行中心",
+                    "duty": "负责部分大数据展示页面的编写，实现模板引擎框架实现页面动态数据加载。",
+                    "use": "使用html5,css3,Sass,JQuery,Ajax,Echart.js,template.js。"
+                },
+                {
+                    "name": "个人博客笔记类网站（正在开发中...）",
+                    "duty": "自主设计编写个人博客笔记类网站，包括个人做过的项目或demo笔记，简历，手绘作品。",
+                    "use": "使用html5,css3,Sass,JQuery,Ajax,vuejs,nodejs,mongoDB数据库等。"
+                }
+            ]
+        }
+    ]
+}
